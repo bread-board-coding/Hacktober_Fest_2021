@@ -14,7 +14,7 @@ Feel free to connect with maintainers and owners!
 
    # Do give a star if you liked this repo.
    
-   ## Deployment
+  
 
 Note - Your Project Must be valid
 
@@ -32,5 +32,62 @@ Note - Your Project Must be valid
 - Do not add anyone else's work in this repository.It will leads to failure of your pull request.
 
 - Do not make any other change except the changes you made.This may lead to strict actions against you!
+
+# STEPS TO GENERATE PULL REQUESTS
+
+## FORK THIS REPOSITORY
+Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
+
+## CLONE THE REPOSITORY
+Now clone the forked repository to your system. Go to your GitHub account, open the forked repository, click on the code button and then clone the repository.
+
+if you want to use the terminal, use the following commands after you fork the repository , open the terminal type the given command
+
+```javascript
+git clone https://github.com/{your-github-username}/Hacktober-2021.git
+
+
+```
+## CREATE A BRANCH
+Then create a branch on your local repository to solve a problem.
+
+Terminal commands to be used
+
+```javascript
+git checkout -b name_of_your_new_branch
+
+
+```
+
+## ADD AND COMMIT
+Make necessary changes and commit those changes by using following commands.
+
+```javascript
+git add .
+git commit -m "your-commit-message"
+
+
+```
+
+
+## PUSH CHANGES TO GITHUB
+Finally push your local repository to remote repository
+Come to your github and see Compare & Submit a Pull Request. Press this button and create Pull Request
+
+```javascript
+git push origin <branch-name>
+
+
+```
+
+#CONGRATULATIONS YOU HAVE MADE IT!
+
+
+We're happy to merge valid pull requests to this repository!
+
+
+  
+
+
 
 

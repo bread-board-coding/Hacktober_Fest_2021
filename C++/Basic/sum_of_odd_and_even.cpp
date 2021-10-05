@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-    int n=5566810;
-    // cout<<"Enter a number:- ";
-    // cin>>n;
+    int n;
+    cout<<"Enter a number:- ";
+    cin>>n;
 
 
     int evenSum=0;

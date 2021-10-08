@@ -1,0 +1,78 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,a[20][20],b[20][20];
+    int c[20][20];
+    int k;
+    int m[20][20];
+
+
+cout << " Enter element of 1st array " << endl;
+    for(i=0; i<3; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+            cin >> a[i][j];
+        }
+        cout << " ";
+    }
+cout << " Enter element of 2nd array " << endl;
+    for(i=0; i<3; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+            cin >> b[i][j];
+        }cout << " ";
+    }
+
+    for(i=0; i<3; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+        c[i][j] = a[i][j] + b[i][j];
+        }
+    }
+cout << "Sum of matrix is :" << endl;
+    for(i=0; i<3; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+            cout << c[i][j] << " ";
+        }cout <<endl;
+    }
+cout << "Transpose of matrix is :" << endl;
+     for(i=0; i<3; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+            cout << c[j][i] << " ";
+        }cout <<endl;
+    }
+
+        for(i=0; i<3; i++)
+    {
+        for(j=0; j<3; j++)
+
+       {   m[i][j] = 0;
+           for(k=0;k<3;k++)
+           {
+               m[i][j] += a[i][k]*b[k][j];
+           }
+       }
+    }
+cout <<"multiple of matrix is:" << endl;
+        for(i=0; i<3; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+            cout << m[i][j] << " ";
+        }cout <<endl;
+    }
+
+
+    return 0;
+}
+

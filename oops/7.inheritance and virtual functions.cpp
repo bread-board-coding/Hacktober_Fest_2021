@@ -1,0 +1,1 @@
+// inheritance is explained in notes

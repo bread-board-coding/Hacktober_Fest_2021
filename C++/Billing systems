@@ -1,0 +1,68 @@
+#include<iostream>
+using namespace std;
+
+double getUnitprice(int itemCode);
+
+int main(){
+
+  double invoice[10][4];
+  int i=0; char more; char date[100];
+
+  cout << "\n\n********* Here are the Item prices for your information********** \n\nItem code\tUnitPrice\n\n1\t100\n2\t200\n3\t300\nInvalidCode\t0\n\n";
+  cout << "Enter the date: ";
+  cin >> date;
+  
+  do {
+ 
+    cout << "\n\nItem code: ";
+    cin >> invoice[i][0];
+    cout << "Quantity : ";
+    cin >> invoice[i][1];
+    
+    invoice[i][2] = getUnitprice(invoice[i][0]); 
+    invoice[i][3] = invoice[i][1] * invoice[i][2]; 
+    
+    cout << "Do you have any other items to be entered next (y/n) ? ";
+    cin >> more;
+  
+    i++;
+  } while(more == 'y');
+    
+ 
+  cout << "\n\n-----------------------------\n\n";
+  cout << "Date : " << date << "\n\n";
+  
+  cout << "ItemCode|Quantity|UnitPrice|TotalPrice\n\n";
+  int tot=0;
+  for(int k=0; k<i; k++)   
+    
+	{
+		for(int l=0; l<4; l++) 
+		{
+		    cout << invoice[k][l]  << "\t";		   
+		}
+		cout << endl;
+		tot = tot + invoice[k][3];
+	}
+
+  cout << "\n\nTotal : " << tot;
+  cout << "\n\n-----------------------------\n\n\n";
+  
+  return 0;
+}
+
+double getUnitprice(int itemCode){
+  double price;
+  switch (itemCode)
+  {
+    case 1: price = 100;
+      break; 
+    case 2: price = 200;
+      break;
+    case 3: price = 300;
+      break;
+    default: price = 0;
+      break;
+  }
+  return price;
+}

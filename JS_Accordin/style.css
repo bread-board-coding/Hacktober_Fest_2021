@@ -1,0 +1,33 @@
+.container{
+    margin:50px auto;
+    width:80%;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.button{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    text-align: left;
+    background-color: #eee;
+    color: #888;
+    font-size: 18;
+    cursor: pointer;
+    outline: none;
+}
+.button::before{
+    content: "+";
+    float: right;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: #aaa;
+    color: white;
+}
+
+.disc{
+    padding:0 20px;
+    display: none;
+
+}

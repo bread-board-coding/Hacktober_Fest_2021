@@ -1,3 +1,4 @@
+# Palindrome. 
 print("Enter the number:")
 n=input()
 if n==n[::-1]:

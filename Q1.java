@@ -1,30 +1,86 @@
-class Q1{
-    static int i = 10;
-   static String s = "ANKUSH GARG";
-   static void disp(){
-    System.out.println("STATIC VARIABLE INT: " + i);
-    System.out.println("STATIC VARIABLE IN STRING : "+ s);
+import java.lang.*;
+
+class Even extends Thread
+
+{
+
+public void run()
+
+{
+
+try
+
+{
+
+for(int i=2;i<=50;i=i+2)
+
+{
+
+System.out.println("\t Even thread :"+i);
+
+sleep(500);
+
 }
-static{
-    System.out.println("IT IS A STATIC BLOCK ");
-    
-} 
 
-   //Static class
-   static class MyNestedClass{
-	//non-static method
-	public void disp2() {
-
-	  String str = "IT IS A NON STATIC METHOD IN NESTED CLASS";
-	   System.out.println(str); 
-	}
-
-   }
-   public static void main(String args[])
-   {
-      disp();
-      Q1.MyNestedClass obj=new Q1.MyNestedClass();
-      obj.disp2();
-	
-   }
 }
+
+catch(InterruptedException e)
+
+{System.out.println("even thread interrupted");
+
+}
+
+}
+
+}
+
+class Odd extends Thread
+
+{
+
+public void run()
+
+{
+
+try
+
+{
+
+for(int i=1;i<50;i=i+2)
+
+{
+
+System.out.println("\t Odd thread :"+i);
+
+sleep(500);
+
+}
+
+}
+
+catch(InterruptedException e)
+
+{System.out.println("odd thread interrupted");
+
+}
+
+}
+
+}
+
+class Q1
+
+{
+
+public static void main(String args[])
+
+{
+
+new Even().start();
+
+new Odd().start();
+
+}
+
+}
+

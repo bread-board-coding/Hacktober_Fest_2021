@@ -1,0 +1,48 @@
+	{
+		    
+		    
+		    int n=scn.nextInt();
+		    
+		    int[] arr = new int[n];
+		    
+		    for(int a=0;a<n;a++)
+		    {
+		        arr[a]=scn.nextInt();
+		    }
+		    
+		
+		
+		int roomsiz=scn.nextInt();
+		
+// 		//////////////////////////////////////
+
+
+
+
+int ev=0;
+
+for(int j=0;j<n;j++)
+{
+    if(arr[j]%2==0)
+    {
+        ev++;
+    }
+}
+
+
+if(ev>=roomsiz)
+{
+    System.out.println("YES");
+}
+else
+{
+ System.out.println("NO");   
+}
+
+}
+
+		
+		
+		
+	}
+}

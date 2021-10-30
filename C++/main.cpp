@@ -1,49 +1,44 @@
 #include <iostream>
+#include <cstdlibs>
 
 using namespace std;
 
-int find(int arr[], int n)
+
+struct node
 {
-    int first = arr[0];
-    int second = arr[1];
-    int temp;
+int data;
+node* next;
+}
 
-    if(first < second)
-    {
-        temp = first;
-        first = second;
-        second = temp;
-    }
 
-    for(int i=2;i<n;i++)
-    {
-        if(arr[i] > first)
-        {
-            second = first;
-            first = arr[i];
-        }
+void push(node** head_ref, int data)
+{
+node* new_node = (struct node *)malloc(sizeof(struct node));
 
-        else if(arr[i] > second)
-        {
-            second = arr[i];
-        }
-    }
-    cout<<first<<endl;
-    cout<<second<<endl;
+new_node->data = data;
+new_node->next = *head_ref;
+
+*head_ref = new_data;
+
+
+}
+
+
+void print(node* n)
+{
+while(n != Null)
+{
+cout << n->data;
+n=n->next;
+}
 }
 
 int main()
-
 {
-    int n;
-    int arr[20];
-    cout <<"Enter value of n :"<<endl;
-    cin >> n;
-    cout << "Enter value of array" << endl;
-    for(int i=0;i<n;i++)
-    {
-        cin >> arr[i];
-    }
-    find(arr, n);
+    node *head = NULL:
+
+    push(&head, 2);
+
+    print(head);
     return 0;
 }

@@ -1,3 +1,6 @@
+# This program is used by Tkinter Library
+# Start of Calculator program
+
 from tkinter import*
 cal=Tk()
 cal.geometry("410x460")
@@ -92,3 +95,5 @@ butclear.place(x=270,y=100)
 butequal=Button(cal,padx=151,pady=14,bd=4,bg='light yellow',command=equlbut,text="=",font=("Calibri (Body)",16,'bold'))
 butequal.place(x=10,y=380)
 cal.mainloop()
+
+# End of Program

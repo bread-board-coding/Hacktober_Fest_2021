@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+clrscr();
+int i,j,k,co=0;
+char a[20];
+cout<<"Enter your string"<<endl;
+gets(a);
+for(i=0;a[i]!='\0';i++);
+for(j=i,k=0;j>=0 && a[k]!='\0';j--,k++)
+{
+if(a[k]==a[j])
+{
+co=1;
+break;
+}
+}
+if(co==0)
+{
+cout<<"It is a palindrome";
+}
+else
+{ cout<<"It is not a palindrome";
+}
+getch();
+}
+
+
+

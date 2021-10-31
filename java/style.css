@@ -1,0 +1,14 @@
+body{
+background-color: blue;
+text-align: center;
+}
+h1{
+    font-size: larger ;
+    color: coral;
+}
+button{
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 7px;
+    color: rgb(216, 73, 139);
+}
